@@ -16,6 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
  get <- function() x
  setSolve <- function(solve) m <<- solve
  getSolve <- function() m
+ # Next two lines store / retrieve the matrix for which is inverse is (was) calculated
  setMatrix <- function(cached) cachedMatrix <<- cached
  getMatrix <- function() cachedMatrix
  list(set = set, get = get,
